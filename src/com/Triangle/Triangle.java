@@ -1,6 +1,6 @@
 package com.Triangle;
 
-public class TriangleTest {
+public class Triangle {
 	public String positiveTest(int a, int b, int c){
 		//判断边长是否为正整数
 		if(a>0 && b>0 && c>0) return "Passed";

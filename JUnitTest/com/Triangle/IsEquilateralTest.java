@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import com.Triangle.TriangleTest;
+import com.Triangle.Triangle;
 
 @RunWith(Parameterized.class)
 public class IsEquilateralTest {
@@ -18,7 +18,7 @@ public class IsEquilateralTest {
 	private int a;
 	private int b;
 	private int c;
-	private TriangleTest triangle = null;
+	private Triangle triangle = null;
 
 	public IsEquilateralTest(int a, int b, int c, String expected) {
 		this.a = a;
@@ -29,7 +29,7 @@ public class IsEquilateralTest {
 
 	@Before
 	public void setUp() {
-		triangle = new TriangleTest();
+		triangle = new Triangle();
 	}
 
 	@Parameters
